@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050914">
+  <title>CSS Flip Button Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>CSS FLIP BUTTON ANIMATION</h1>
+    <section class="demo-board" aria-label="Five CSS 3D flip button animations">
+      <article class="demo-card">
+        <h2>Classic 3D Flip Button</h2>
+        <div class="stage">
+          <button class="flip-scene classic" type="button" aria-label="Classic 3D flip button">
+            <span class="flip-btn">
+              <span class="face front">Rotate</span>
+              <span class="face back">3D Flip</span>
+            </span>
+          </button>
+        </div>
+        <pre><code>.flip1:hover .flip-btn {
+  transform: rotateX(180deg);
+}
+
+.flip1 .front {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <h2>Neon 3D Flip Button</h2>
+        <div class="stage">
+          <button class="flip-scene neon" type="button" aria-label="Neon 3D flip button">
+            <span class="flip-btn">
+              <span class="face front">Neon Button</span>
+              <span class="face back">Activated</span>
+            </span>
+          </button>
+        </div>
+        <pre><code>.flip2:hover .flip-btn {
+  transform: rotateY(180deg);
+}
+
+.flip2 .front {
+  background: #000;
+  border: 2px solid #00f5ff;
+  box-shadow: 0 0 20px #0085ff;
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <h2>Glassmorphism Flip Button</h2>
+        <div class="stage glass-stage">
+          <button class="flip-scene glass" type="button" aria-label="Glassmorphism flip button">
+            <span class="flip-btn">
+              <span class="face front">Glass UI</span>
+              <span class="face back">Completed</span>
+            </span>
+          </button>
+        </div>
+        <pre><code>.flip3:hover .flip-btn {
+  transform: rotateX(-180deg);
+}
+
+.flip3 .face {
+  backdrop-filter: blur(12px);
+}
+
+.flip3 .front {
+  background: rgba(255,255,255,0.08);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <h2>Explosion Flip Button</h2>
+        <div class="stage">
+          <button class="flip-scene explosion" type="button" aria-label="Explosion flip button">
+            <span class="flip-btn">
+              <span class="face front">Explosive</span>
+              <span class="face back">BOOM!</span>
+            </span>
+          </button>
+        </div>
+        <pre><code>.flip4:hover .flip-btn {
+  transform:
+    rotateY(-180deg)
+    scale(1.08);
+}
+
+.flip4 .front {
+  background:
+    linear-gradient(135deg, #ff512f, #dd2476);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <h2>Cyber Flip Button</h2>
+        <div class="stage">
+          <button class="flip-scene cyber" type="button" aria-label="Cyber flip button">
+            <span class="flip-btn">
+              <span class="face front">Cyber Mode</span>
+              <span class="face back">ONLINE</span>
+            </span>
+          </button>
+        </div>
+        <pre><code>.flip5:hover .flip-btn {
+  transform:
+    rotateX(180deg)
+    rotateY(180deg);
+}
+
+.flip5 .front {
+  background: #000;
+  border: 2px solid #00ffe7;
+}</code></pre>
+      </article>
+    </section>
+    <p class="hint">Hover or tap a button to see its 3D flip.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
